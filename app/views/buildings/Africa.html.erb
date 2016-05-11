@@ -1,0 +1,47 @@
+<html>
+<%= stylesheet_link_tag "application.css", :media => "all" %>
+<%= javascript_include_tag "application.js", :media => "all" %>
+<head>
+  <title>SkyHi: Home Page</title>
+
+</head>
+<body>
+  <div class = "header">
+<h1 style = "text-align: center; color: black;">SkyHi</h1>
+    <ul class = "navlinks">
+      <li><%= link_to "Home", :controller => "buildings", :action => "Home" %></li>
+      <li><%= link_to "Carlton Centre", :controller => "buildings", :action => "Africa" %></li>
+      <li><%= link_to "Burj Khalifa", :controller => "buildings", :action => "Asia" %></li>
+      <li><%= link_to "Q1", :controller => "buildings", :action => "Australia" %></li>
+      <li><%= link_to "Federation Tower", :controller => "buildings", :action => "Europe" %></li>
+      <li><%= link_to "Tokyo Skytree", :controller => "buildings", :action => "Japan" %><br></li>
+      <li><%= link_to "One World Trade Center", :controller => "buildings", :action => "NorthAmerica" %></li>
+      <li class = "last"><%= link_to "Gran Torre Santiago", :controller => "buildings", :action => "SouthAmerica" %></li>
+    </ul>
+
+   </div>
+  <br>
+<h1 style = "text-align: center;">Carlton Centre - Africa</h1>
+<hr>
+  <div class = "video">
+  <%= video_tag("CarltonCentre.mp4", controls: true, autobuffer: true, height: '750', width: '750') %>
+  </div>
+  <hr>
+  <div class = "info">
+    <h3>Height: 223 meters (730 feet)</h3>
+    <h3>Floor Count: 50</h3>
+    <h3>Location: Johannesburg, South Africa</h3>
+    <h3>Completion: 1973</h3>
+    <p style="padding-left: 150px;padding-right: 150px;">Fun Facts: The Carlton Centre is the tallest building in Africa and was once the tallest building in the southern hemisphere.  It is the headquarters of Transnet, a South African Transport company.  The Carlton Centre is connected to the Carlton Centre Hotel by a belowground shopping centre with over 180 shops.  The top floor of the Carlton Centre is known locally as the “Top of Africa”.  As it was used for offices in the early life of the building, the economic downturn of 2008 took away offices.  Now, the Carlton Centre can be seen as a large shopping mall and the Carlton Centre Hotel is closed.</p>
+  </div>
+  <div class = "footer">
+
+    <p>Designed by Michael Hineman</p>
+    <p>DePauw University - 408 S. Locust Street Greencastle, IN</p>
+    <p>Privacy Policy</p>
+    <p>We use no cookies & store/ request no information<p>
+    <p>Have fun!</p>
+
+  </div>
+</body>
+</html>

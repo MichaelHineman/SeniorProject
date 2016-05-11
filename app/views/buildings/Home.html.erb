@@ -1,0 +1,58 @@
+<html>
+<%= stylesheet_link_tag "application.css", :media => "all" %>
+<head>
+  <title>SkyHi: Home Page</title>
+</head>
+<body>
+  <div class = "header">
+    <h1 style = "text-align:center;color:black;">SkyHi</h1>
+    <ul class = "navlinks">
+      <li><%= link_to "Home", :controller => "buildings", :action => "Home" %></li>
+      <li><%= link_to "Carlton Centre", :controller => "buildings", :action => "Africa" %></li>
+      <li><%= link_to "Burj Khalifa", :controller => "buildings", :action => "Asia" %></li>
+      <li><%= link_to "Q1", :controller => "buildings", :action => "Australia" %></li>
+      <li><%= link_to "Federation Tower", :controller => "buildings", :action => "Europe" %></li>
+      <li><%= link_to "Tokyo Skytree", :controller => "buildings", :action => "Japan" %><br></li>
+      <li><%= link_to "One World Trade Center", :controller => "buildings", :action => "NorthAmerica" %></li>
+      <li class = "last"><%= link_to "Gran Torre Santiago", :controller => "buildings", :action => "SouthAmerica" %></li>
+    </ul>
+
+   </div>
+<h3 style="text-align: center;">I hope your enthusiasm about skyscrapers is as great as mine! I was crazy enough to build a website about them!<br>At SkyHi, you will be able to look at a few of the tallest skyscrapers in the world and learn a few fun facts about them at the same time!<br></h3>
+<p style="text-align: center;">Here is a gallery of each skyscraper (from left to right):<br> Carlton Centre, Burj Khalifa, Q1 Tower, Federation Tower, Tokyo Skytree, One World Trade Center, and Gran Torre Santiago</p>
+<hr>
+  <div class = "pictures">
+  <%= image_tag("CarltonCentre.jpeg", :alt => "Carlton Centre", :class => "style_image") %>
+  <%= image_tag("BurjKhalifa.jpeg", :alt => "Burk Khalifa", :class => "style_image") %>
+  <%= image_tag("Q1Tower.jpeg", :alt => "Q1", :class => "style_image") %>
+  <%= image_tag("FederationTower.jpg", :alt => "Federation Tower", :class => "style_image") %>
+  <%= image_tag("TokyoSkytree.jpeg", :alt => "Tokyo Skytree", :class => "style_image") %>
+  <%= image_tag("OWTC.jpeg", :alt => "One World Trade Center", :class => "style_image") %>
+  <%= image_tag("GranTorreSantiago.jpeg", :alt => "Gran Torre Santiago", :class => "style_image") %>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <hr>
+<p style="text-align: center; margin-left: 250px; margin-right: 250px;">My inspiration to make this website was when I ventured out to Japan with a fellow students and professors for a winter term trip.  We visited the Tokyo Skytree and the massive size of the building has made me look at architecture more and more.  I decided that creating a website about other skyscrapers would be cool and hopefully excite you as much as it does for me.  I learned a lot about other continent's tallest skyscrapers and hope you learn just as much from visiting.  Thanks for visiting and hope you have a good time.</p>
+  <div class = "footer">
+
+    <p>Designed by Michael Hineman</p>
+    <p>DePauw University - 408 S. Locust Street Greencastle, IN</p>
+    <p>Privacy Policy</p>
+    <p>We use no cookies & store/ request no information<p>
+    <p>Have fun!</p>
+
+  </div>
+</body>
+</html>

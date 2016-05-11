@@ -1,0 +1,106 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+	background-color: #C9C9C9;
+	color:black;
+	margin:0;
+	padding:0;
+	/*margin, padding*/
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.header{
+	margin-left: 0px;
+	margin-top: 0px;
+	padding-top: 1px;
+	background: #E3E3E3;
+	color: #F5F3EE
+}
+
+.navlinks{
+	background-color: #9AD3DE;
+	color:#FFF;
+	margin:0;
+	padding: 0.5em 3em;
+	font-size: 25px;
+	list-style: none;
+	text-align: center;
+}
+
+.navlinks li{
+	display: inline;
+	margin-right: 0.5em;
+	padding-right: 0.75em;
+	border-right: 1px solid #99C;
+	font-weight: bold;
+  color: #FFF;
+}
+
+.navlinks li.last{
+	border-right: 0;
+}
+
+.footer{
+	background-color: #E3E3E3;
+	color: black;
+	clear: both;
+	text-align: center;
+	padding: 10px;
+}
+
+.webgl{
+  width: 20%;
+  float: right;
+}
+
+.info{
+  text-align: center;
+}
+
+.style_image{
+  float: left;
+  height: 295px;
+  width: 240px;
+
+}
+
+.style_wire{
+  margin-left: 14em;
+}
+
+.video{
+  margin-left: 32em;
+}
+
+.pictures{
+  padding-left: 15px;
+}
+
+a{
+	text-decoration: none;
+}
+a:link{
+	color: white;
+}
+a:visited{
+	color: white;
+}
+a:active{
+	color: white;
+}
+a:hover{
+	color: #89BDD3;
+}

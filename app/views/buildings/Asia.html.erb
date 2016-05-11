@@ -1,0 +1,47 @@
+<html>
+<%= stylesheet_link_tag "application.css", :media => "all" %>
+<%= javascript_include_tag "application.js", :media => "all" %>
+<head>
+  <title>SkyHi: Home Page</title>
+
+</head>
+<body>
+  <div class = "header">
+<h1 style = "text-align: center; color: black;">SkyHi</h1>
+    <ul class = "navlinks">
+      <li><%= link_to "Home", :controller => "buildings", :action => "Home" %></li>
+      <li><%= link_to "Carlton Centre", :controller => "buildings", :action => "Africa" %></li>
+      <li><%= link_to "Burj Khalifa", :controller => "buildings", :action => "Asia" %></li>
+      <li><%= link_to "Q1", :controller => "buildings", :action => "Australia" %></li>
+      <li><%= link_to "Federation Tower", :controller => "buildings", :action => "Europe" %></li>
+      <li><%= link_to "Tokyo Skytree", :controller => "buildings", :action => "Japan" %><br></li>
+      <li><%= link_to "One World Trade Center", :controller => "buildings", :action => "NorthAmerica" %></li>
+      <li class = "last"><%= link_to "Gran Torre Santiago", :controller => "buildings", :action => "SouthAmerica" %></li>
+    </ul>
+
+   </div>
+  <br>
+<h1 style = "text-align: center;">Burj Khalifa - Asia</h1>
+<hr>
+  <div class = "video">
+  <%= video_tag("BurjKhalifa.mp4", controls: true, autobuffer: true, height: '750', width: '750') %>
+  </div>
+  <hr>
+  <div class = "info">
+    <h3>Height: 829.8 meters (2,722 feet)</h3>
+    <h3>Floor Count: 163</h3>
+    <h3>Location: Dubai, United Arab Emirates</h3>
+    <h3>Completion: 2010</h3>
+    <p style="padding-left: 150px;padding-right: 150px;">Fun Facts:  The Burj Khalifa is the world’s tallest building and the world’s tallest man-made structure.  There is an observation deck on the 148th floor to see the city of Dubai.  This building has broken 18 records for being the tallest of its kind in many different genres (highest observation deck, highest nightclub, and highest elevator installation).  The decision to build the building is reportedly based on the government’s decision to diversify from an oil-based economy, and for Dubai to gain international recognition.  There is a mixed-use of the Burj Khalifa ranging from Armani Hotel rooms to sky-high observatories and residential living to corporate suites.  There is also a restaurant on the 122nd floor!</p>
+  </div>
+  <div class = "footer">
+
+    <p>Designed by Michael Hineman</p>
+    <p>DePauw University - 408 S. Locust Street Greencastle, IN</p>
+    <p>Privacy Policy</p>
+    <p>We use no cookies & store/ request no information<p>
+    <p>Have fun!</p>
+
+  </div>
+</body>
+</html>
